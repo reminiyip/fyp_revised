@@ -1,0 +1,58 @@
+/* PAGE */
+
+body,
+.pure-g [class*=pure-u] {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+h1, h2, h3, h4, label, input, button, td, p {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+}
+
+span {
+  margin-left: 10px;
+}
+
+.instantiateContract label, .instantiateContract input {
+  display: block;
+}
+
+.instantiateContract label {
+  margin-bottom: 20px;
+}
+
+.store label {
+  margin-right: 40px;
+}
+
+.request label, .request button {
+  margin-right: 15px;
+}
+
+.request p, .store p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.addShares div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+tbody {
+  display: block;
+  height: 200px;
+  overflow: auto;
+}
+
+.tile article {
+  background-color: #383838;
+}
+
+.tile p {
+  color: white;
+}

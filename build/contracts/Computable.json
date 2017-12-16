@@ -1,0 +1,238 @@
+{
+  "contract_name": "Computable",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_checkingPeriodInSecond",
+          "type": "uint256"
+        }
+      ],
+      "name": "setCheckingPeriodInSecond",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "commander",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "requestCeilingPerRequester",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_requestCeilingPerRequester",
+          "type": "uint8"
+        }
+      ],
+      "name": "setRequestCeilingPerRequester",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isComputationStarted",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "checkingEndTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "declareCheckingEnd",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getRequestersSize",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "declareComputationStart",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "computationEndTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "checkingPeriodInSecond",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_computationFeesThreshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "setComputationFeesThreshold",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "addRequester",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "computationPeriodInSecond",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "computationFeesThreshold",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_computationPeriodInSecond",
+          "type": "uint256"
+        }
+      ],
+      "name": "setComputationPeriodInSecond",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_computationFeesThreshold",
+          "type": "uint256"
+        },
+        {
+          "name": "_computationPeriodInSecond",
+          "type": "uint256"
+        },
+        {
+          "name": "_checkingPeriodInSecond",
+          "type": "uint256"
+        },
+        {
+          "name": "_requestCeilingPerRequester",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516080806106d0833981016040528080519190602001805191906020018051919060200180519150505b60008054600160a060020a03191633600160a060020a03161790556001849055600283905560048290556006805460ff191660ff83161790555b505050505b610647806100896000396000f300606060405236156100ca5763ffffffff60e060020a60003504166301b8966981146100cf57806337270936146100e757806348eaa34c1461011657806359a02ebd1461013f5780636d93c6ea1461015a578063780b33b21461018157806389a8be5e146101a657806399a65c88146101bb578063a0d540a7146101e4578063af761a10146101f9578063bb1c1a911461021e578063d55c12c314610243578063e4d609cc1461025b578063e4ddd30e1461027c578063ee5169cc146102a1578063f9d012f9146102c6575b600080fd5b34156100da57600080fd5b6100e56004356102de565b005b34156100f257600080fd5b6100fa610305565b604051600160a060020a03909116815260200160405180910390f35b341561012157600080fd5b610129610314565b60405160ff909116815260200160405180910390f35b341561014a57600080fd5b6100e560ff6004351661031d565b005b341561016557600080fd5b61016d61034e565b604051901515815260200160405180910390f35b341561018c57600080fd5b61019461035c565b60405190815260200160405180910390f35b34156101b157600080fd5b6100e5610362565b005b34156101c657600080fd5b6101296103bb565b60405160ff909116815260200160405180910390f35b34156101ef57600080fd5b6100e5610436565b005b341561020457600080fd5b61019461048d565b60405190815260200160405180910390f35b341561022957600080fd5b610194610493565b60405190815260200160405180910390f35b341561024e57600080fd5b6100e5600435610499565b005b341561026657600080fd5b6100e5600160a060020a03600435166104c0565b005b341561028757600080fd5b6101946105e8565b60405190815260200160405180910390f35b34156102ac57600080fd5b6101946105ee565b60405190815260200160405180910390f35b34156102d157600080fd5b6100e56004356105f4565b005b6000543390600160a060020a038083169116146102fa57600080fd5b60048290555b5b5050565b600054600160a060020a031681565b60065460ff1681565b6000543390600160a060020a0380831691161461033957600080fd5b6006805460ff191660ff84161790555b5b5050565b600654610100900460ff1681565b60055481565b6000543390600160a060020a0380831691161461037e57600080fd5b60065460ff61010090910416151560011461039857600080fd5b600554428190116103a857600080fd5b6006805461ff00191690555b5b505b5b50565b600073__AddressQueue__________________________63c1f9553a600760006040516020015260405160e060020a63ffffffff8416028152600481019190915260240160206040518083038186803b151561041657600080fd5b6102c65a03f4151561042757600080fd5b50505060405180519150505b90565b6000543390600160a060020a0380831691161461045257600080fd5b600654610100900460ff161561046757600080fd5b60025442016003819055600454016005556006805461ff0019166101001790555b5b5b50565b60035481565b60045481565b6000543390600160a060020a038083169116146104b557600080fd5b60018290555b5b5050565b6000543390600160a060020a038083169116146104dc57600080fd5b8173__AddressQueue__________________________6366f9ff0c60078360006040516020015260405160e060020a63ffffffff85160281526004810192909252600160a060020a0316602482015260440160206040518083038186803b151561054557600080fd5b6102c65a03f4151561055657600080fd5b505050604051805160001914905061056d57600080fd5b73__AddressQueue__________________________630fb589f760078560405160e060020a63ffffffff85160281526004810192909252600160a060020a0316602482015260440160006040518083038186803b15156105cc57600080fd5b6102c65a03f415156105dd57600080fd5b5050505b5b505b5050565b60025481565b60015481565b6000543390600160a060020a0380831691161461061057600080fd5b60028290555b5b50505600a165627a7a72305820a5462d47c43df261757a37eabb1c108c6a2411cef54292f2f43302682b6f177d0029",
+  "networks": {
+    "1513423609190": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0xbe2e133587604d4516cfee32445e36b4a8875b31"
+      },
+      "address": "0x1f29bcc22037ac068e458c694c9a75a23dc46de1",
+      "updated_at": 1513423619509
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513423619509
+}

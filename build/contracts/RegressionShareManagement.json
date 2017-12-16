@@ -1,0 +1,269 @@
+{
+  "contract_name": "RegressionShareManagement",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "newHolder",
+          "type": "address"
+        },
+        {
+          "name": "oldHolder",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "copyShare",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "checkNumberOfShares",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getShareY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getShareXY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getShareDate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[3]"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "_chosen",
+          "type": "address"
+        },
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_x",
+          "type": "int256"
+        },
+        {
+          "name": "_y",
+          "type": "int256"
+        },
+        {
+          "name": "_xy",
+          "type": "int256"
+        },
+        {
+          "name": "_xsq",
+          "type": "int256"
+        },
+        {
+          "name": "_date",
+          "type": "uint256[3]"
+        }
+      ],
+      "name": "addShare",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getShareX",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getShareXSQ",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        }
+      ],
+      "name": "checkTotalNumberOfShares",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "RegressionShareManagement.RegressionShareWarehouse storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "deleteShares",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6107fa8061001f6000396000f300606060405236156100a15763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633cf5366181146100a65780634cf97765146100c8578063584c2d75146100f15780636b8f301d1461011d57806377a19f9a146101495780637bbbce361461019c5780639a9e5c3e146101f65780639ba3b9ac14610222578063a11750fc1461024e578063fac505631461026b575b600080fd5b6100c6600435600160a060020a0360243581169060443516606435610284565b005b6100df600435600160a060020a0360243516610366565b60405190815260200160405180910390f35b6100df600435600160a060020a0360243516604435610386565b60405190815260200160405180910390f35b6100df600435600160a060020a03602435166044356103ca565b60405190815260200160405180910390f35b610163600435600160a060020a036024351660443561040e565b6040518082606080838360005b838110156101895780820151818401525b602001610170565b5050505090500191505060405180910390f35b6100c66004803590600160a060020a0360243581169160443590911690606435906084359060a4359060c4359061014460e4600360606040519081016040529190828260608082843750939550610488945050505050565b005b6100df600435600160a060020a0360243516604435610582565b60405190815260200160405180910390f35b6100df600435600160a060020a03602435166044356105c6565b60405190815260200160405180910390f35b6100df60043561060a565b60405190815260200160405180910390f35b6100c6600435600160a060020a0360243516610615565b005b600160a060020a03831660009081526020859052604090208054600181016102ac838261063b565b916000526020600020906008020160005b600160a060020a03851660009081526020889052604090208054859081106102e157fe5b906000526020600020906008020160005b508054835473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03909116178355600180820154908401556002808201549084015560038082015481850155600480830154908501559092915061035b906005808401919085019061066d565b505050505b50505050565b600160a060020a0381166000908152602083905260409020545b92915050565b600160a060020a03821660009081526020849052604081208054839081106103aa57fe5b906000526020600020906008020160005b506002015490505b9392505050565b600160a060020a03821660009081526020849052604081208054839081106103ee57fe5b906000526020600020906008020160005b506003015490505b9392505050565b6104166106a9565b600160a060020a038316600090815260208590526040902080548390811061043a57fe5b906000526020600020906008020160005b506005016003606060405190810160405291906060830182845b815481526020019060010190808311610465575b505050505090505b9392505050565b600160a060020a03871660009081526020899052604090208054600181016104b0838261063b565b916000526020600020906008020160005b60c0604051908101604052808a600160a060020a031681526020018981526020018881526020018781526020018681526020018581525090919091506000820151815473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03919091161781556020820151816001015560408201518160020155606082015181600301556080820151816004015560a082015161056790600583019060036106d0565b5050506001808a0180549091019055505b5050505050505050565b600160a060020a03821660009081526020849052604081208054839081106105a657fe5b906000526020600020906008020160005b506001015490505b9392505050565b600160a060020a03821660009081526020849052604081208054839081106105ea57fe5b906000526020600020906008020160005b506004015490505b9392505050565b60018101545b919050565b600160a060020a03811660009081526020839052604081206106369161070f565b5b5050565b815481835581811511610667576008028160080283600052602060002091820191016106679190610734565b5b505050565b8260038101928215610698579182015b8281111561069857825482559160010191906001019061067d565b5b506106a5929150610798565b5090565b60606040519081016040526003815b60008152602001906001900390816106b85790505090565b8260038101928215610698579160200282015b828111156106985782518255916020019190600101906106e3565b5b506106a5929150610798565b5090565b50805460008255600802906000526020600020908101906107309190610734565b5b50565b61079591905b808211156106a557805473ffffffffffffffffffffffffffffffffffffffff1916815560006001820181905560028201819055600382018190556004820181905561078860058301826107b9565b5060080161073a565b5090565b90565b61079591905b808211156106a5576000815560010161079e565b5090565b90565b506000815560010160008155600101600090555600a165627a7a72305820b90627ceab788a7b44ceafbbac8093c269cc6cdc36b64322fa8441bfa8414fa00029",
+  "networks": {
+    "1513423609190": {
+      "events": {},
+      "links": {},
+      "address": "0xb8d5aaa4b5700b9f53944472ecec03363de39dc5",
+      "updated_at": 1513423619505
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513423619505
+}

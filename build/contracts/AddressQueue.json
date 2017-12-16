@@ -1,0 +1,205 @@
+{
+  "contract_name": "AddressQueue",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "index",
+          "type": "uint8"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "jumpQueueAtHead",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "enqueue",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "index",
+          "type": "uint8"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "indexOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        },
+        {
+          "name": "seed",
+          "type": "uint256"
+        }
+      ],
+      "name": "generateRandomIndexWithinSize",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        }
+      ],
+      "name": "isFull",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        }
+      ],
+      "name": "dequeue",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        }
+      ],
+      "name": "isEmpty",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "AddressQueue.AddressQueueData storage"
+        }
+      ],
+      "name": "size",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6106688061001f6000396000f300606060405236156100a15763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663097eadd681146100a65780630a87005c146100b95780630fb589f7146100d2578063633d19bb146100eb57806366f9ff0c1461011857806372d4ea68146101415780638cc9339a1461016557806399b9266914610184578063a5b7eb4a146101ab578063c1f9553a146101ca575b600080fd5b6100b760043560ff602435166101eb565b005b6100b7600435600160a060020a03602435166102b3565b005b6100b7600435600160a060020a0360243516610392565b005b6100fc60043560ff60243516610404565b604051600160a060020a03909116815260200160405180910390f35b61012f600435600160a060020a0360243516610452565b60405190815260200160405180910390f35b61014f6004356024356104c6565b60405160ff909116815260200160405180910390f35b610170600435610504565b604051901515815260200160405180910390f35b6100fc600435610527565b604051600160a060020a03909116815260200160405180910390f35b61017060043561060e565b604051901515815260200160405180910390f35b61014f60043561062f565b60405160ff909116815260200160405180910390f35b60ff80830154600091849184919081169082161061020857600080fd5b8392505b60ff858101548116600019018116908416101561028e578460ff60018501811690811061023557fe5b0160005b9054600160a060020a036101009290920a9004168560ff80861690811061025c57fe5b0160005b6101000a815481600160a060020a030219169083600160a060020a031602179055505b60019092019161020c565b60ff858101805460ff198116908316600019019092169190911790555b5b5050505050565b6000826102bf81610504565b156102c957600080fd5b60ff808501541691505b60008211156103435783600019830160ff81106102ec57fe5b0160005b9054600160a060020a036101009290920a900416848360ff811061031057fe5b0160005b6101000a815481600160a060020a030219169083600160a060020a031602179055505b600019909101906102d3565b828460005b0160005b81546101009190910a600160a060020a0381810219909216939091160291909117905560ff848101805460ff1981169083166001019092169190911790555b5b50505050565b8161039c81610504565b156103a657600080fd5b60ff808401548391859181169081106103bb57fe5b0160005b81546101009190910a600160a060020a0381810219909216939091160291909117905560ff838101805460ff1981169083166001019092169190911790555b5b505050565b60ff80830154600091849184919081169082161061042157600080fd5b8460ff80861690811061043057fe5b0160005b9054906101000a9004600160a060020a031692505b5b505092915050565b6000805b60ff80850154811690821610156104b957600160a060020a0383168460ff80841690811061048057fe5b0160005b9054906101000a9004600160a060020a0316600160a060020a031614156104b0578060ff1691506104bf565b5b600101610456565b60001991505b5092915050565b6000600019430140818360405190815260200160405190819003902060ff80870154919250168282018115156104f857fe5b0692505b505092915050565b60ff80820154600091908116141561051e57506001610522565b5060005b919050565b6000806000836105368161060e565b1561054057600080fd5b8460005b0160005b9054906101000a9004600160a060020a03169250600091505b60ff85810154811660001901811690831610156105e3578460ff60018401811690811061058a57fe5b0160005b9054600160a060020a036101009290920a9004168560ff8085169081106105b157fe5b0160005b6101000a815481600160a060020a030219169083600160a060020a031602179055505b600190910190610561565b60ff858101805460ff1981169083166000190190921691909117905591925082915b5b505050919050565b60ff8082015460009116151561051e57506001610522565b5060005b919050565b60ff80820154165b9190505600a165627a7a72305820976217635a59c822b48771b395864483b33cfc9dc0911b1a2bab40e63a0b38800029",
+  "networks": {
+    "1513423609190": {
+      "events": {},
+      "links": {},
+      "address": "0xbe2e133587604d4516cfee32445e36b4a8875b31",
+      "updated_at": 1513423619504
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513423619504
+}
