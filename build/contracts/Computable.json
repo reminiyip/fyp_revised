@@ -231,8 +231,24 @@
       },
       "address": "0x1f29bcc22037ac068e458c694c9a75a23dc46de1",
       "updated_at": 1513423619509
+    },
+    "1513751034511": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0xe868201c752d7ecd9d8d1b3e10353df522e2232d"
+      },
+      "address": "0x08e727f3db29be6b13e68aa5a7f64efc44dc89f2",
+      "updated_at": 1513751047324
+    },
+    "1513751179577": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0x4bad7eac885388ffe7a6a9b0b6b84d1429acc40e"
+      },
+      "address": "0xece1c7ac067133b0b600a233ff2868d8901ec9cd",
+      "updated_at": 1513751186228
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1513423619509
+  "updated_at": 1513751186228
 }

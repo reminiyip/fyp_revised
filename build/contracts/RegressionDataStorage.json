@@ -300,8 +300,28 @@
       },
       "address": "0xc713b4f97401ccee45848380df4ecbe665566594",
       "updated_at": 1513423619508
+    },
+    "1513751034511": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0xe868201c752d7ecd9d8d1b3e10353df522e2232d",
+        "DateChecker": "0x86437830c9ff98473e3732c4b40ae210b987dc27",
+        "RegressionShareManagement": "0xefa43be22813dfb0a14e81bc698108b9f2534819"
+      },
+      "address": "0xaacb0aee2a14cfadced6d334576b2fff059d39bb",
+      "updated_at": 1513751047323
+    },
+    "1513751179577": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0x4bad7eac885388ffe7a6a9b0b6b84d1429acc40e",
+        "DateChecker": "0x1b7338de94f00bbdcd055b70ceab028ec130665d",
+        "RegressionShareManagement": "0xa893d5cbcfad2b9999f2fcd27fbd001b71c87b9d"
+      },
+      "address": "0x6e726ecde72e9980b9b95d321acbbcd0f58ad54c",
+      "updated_at": 1513751186227
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1513423619508
+  "updated_at": 1513751186227
 }

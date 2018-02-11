@@ -625,8 +625,32 @@
       },
       "address": "0x210210e684c93e8d0e4edc45c48694d4466451ac",
       "updated_at": 1513423619512
+    },
+    "1513751034511": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0xe868201c752d7ecd9d8d1b3e10353df522e2232d",
+        "DateChecker": "0x86437830c9ff98473e3732c4b40ae210b987dc27",
+        "RegressionShareManagement": "0xefa43be22813dfb0a14e81bc698108b9f2534819",
+        "DateBasedRequestManagement": "0xa642a2798cf76929ec8e1cffefb14ba34e466d41",
+        "RegressionResultManagement": "0x8add5b575bcfcc3c92312ea00c06e3c0d10f37bd"
+      },
+      "address": "0x63a4e5bb235c0a51123e6d8fb051e0d08ce98742",
+      "updated_at": 1513751047325
+    },
+    "1513751179577": {
+      "events": {},
+      "links": {
+        "AddressQueue": "0x4bad7eac885388ffe7a6a9b0b6b84d1429acc40e",
+        "DateChecker": "0x1b7338de94f00bbdcd055b70ceab028ec130665d",
+        "RegressionShareManagement": "0xa893d5cbcfad2b9999f2fcd27fbd001b71c87b9d",
+        "DateBasedRequestManagement": "0x75344e71669f7e5ce23024a9def2e0bda1d87ac8",
+        "RegressionResultManagement": "0x70fd19db65a36594c3e7e412e1c5b204db3778cc"
+      },
+      "address": "0x386fc21f463a41020f73d26f85a2e72e95b6959c",
+      "updated_at": 1513751186229
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1513423619512
+  "updated_at": 1513751186229
 }
